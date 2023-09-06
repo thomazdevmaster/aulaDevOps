@@ -23,6 +23,8 @@ services:
       - POSTGRES_HOST_AUTH_METHOD=trust
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    volumes:
+      - app-data:/var/lib/postgres/data
 
   nginx:
     image: nginx
@@ -35,3 +37,5 @@ services:
 
 networks:
   teste:
+volumes:
+  app-data:
