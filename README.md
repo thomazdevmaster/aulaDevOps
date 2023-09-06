@@ -9,3 +9,6 @@
 2. execute `docker build -t teste .`
 3. execute `docker container run -d -p 3000:3000 teste`
 4. para testar o endpoint `curl localhost:3000`
+
+# Exercício 3
+1. `docker compose up -d`
